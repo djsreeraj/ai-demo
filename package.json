@@ -11,7 +11,13 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "@fluentui/react": "^8.112.5",
+    "@fluentui/react-components": "^9.54.13",
+    "@fluentui/react-icons": "^2.0.249",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.26.2",
+    "react-helmet-async": "^2.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
