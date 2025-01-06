@@ -1,0 +1,11 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);    color: #fff;
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 10px;
+    height: 75px;
+}

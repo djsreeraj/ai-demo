@@ -1,11 +1,15 @@
-import Header from "./components/Header"
+import Content from "./components/Content/Content";
+import Header from "./components/header/Header";
+import TitleSection from "./components/TitleSection/Title";
 
 const ProductDemo = () => {
   return (
     <div>
-        <Header />
+      <Header />
+      <TitleSection />
+      <Content />
     </div>
-  )
-}
+  );
+};
 
-export default ProductDemo
+export default ProductDemo;

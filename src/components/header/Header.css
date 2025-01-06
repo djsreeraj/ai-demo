@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  width: 100vw;
+  gap: 40px;
+  justify-content: space-between; /* or space-around */
+  align-items: center;
+  /* background-color: skyblue; */
+  padding: 10px 20px;
+  /* border-bottom: 1px solid #ddd; */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0; /* Ensure it does not take excessive space */
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
