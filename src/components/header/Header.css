@@ -1,11 +1,10 @@
 .main {
   display: flex;
-  width: 100vw;
-  gap: 40px;
+  /* width: 100vw; */
+  margin: 1px 20px;
   justify-content: space-between; /* or space-around */
   align-items: center;
   /* background-color: skyblue; */
-  padding: 10px 20px;
   /* border-bottom: 1px solid #ddd; */
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
