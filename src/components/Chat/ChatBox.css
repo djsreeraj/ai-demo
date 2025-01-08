@@ -2,6 +2,7 @@
     /* width: 30%; */
     height: 100%;
     min-height: 500px;
+    min-width: 400px;
     background-color: rgb(157, 157, 157);
     display: flex;
     gap: 50px;
@@ -30,6 +31,24 @@
   max-height: 400px;
 }
 
+.initial-message {
+  max-width: 70%;
+  padding: 1px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.initial-message.left {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);    color: #fff;
+}
+
+.initial-message.right {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);    color: #fff;
+}
+
 .chat-message {
   max-width: 70%;
   padding: 1px 20px;
@@ -38,15 +57,49 @@
   line-height: 1.4;
 }
 
-.chat-message.left {
-  align-self: flex-start;
-  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);    color: #fff;
+.cs {
+  padding: 1px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-.chat-message.right {
-  align-self: flex-end;
-  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);    color: #fff;
+
+.cm-system-container {
+  position: relative;
+  max-width: 70%;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(90deg, #c0c0c0 30.5%, #adadad 67%);
+  border-radius: 20px; /* Rounded border */
 }
+
+.cs.system {
+  align-self: flex-start;
+  background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
+  padding: 10px; /* Content padding */
+  border-radius: 18px; /* Inner border radius should be smaller */
+}
+
+.cm-user-container {
+  position: relative;
+  z-index: 10;
+  max-width: 70%;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);
+  border-radius: 20px; /* Rounded border */
+}
+
+.cs.user {
+  align-self: flex-end;
+  background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
+  padding: 10px; /* Content padding */
+  border-radius: 18px; /* Inner border radius should be smaller */
+}
+
+/* .chat-message.user {
+  align-self: flex-end;
+  border: 1px solid linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%); 
+} */
 
 .input-box {
   display: flex;
@@ -76,4 +129,29 @@
 
 .input-box button:hover {
   background-color: #1565c0;
+}
+
+
+.user-polygon{
+  position: absolute;
+  width: 28.87px;
+  height: 27.41px;
+  left: 5.62px;
+  bottom: -8.15px;
+  z-index: 8;
+  background: linear-gradient(180deg, #1E58E5 0%, #05B9FB 100%);
+  border-radius: 4px;
+  transform: rotate(-33deg);
+}
+
+.system-polygon{
+  position: absolute;
+  width: 28.87px;
+  height: 27.41px;
+  right: -10.62px;
+  bottom: -8.15px;
+  z-index: 8;
+  background: linear-gradient(60deg, #c0c0c0 30.5%, #adadad 67%);
+  border-radius: 4px;
+  transform: rotate(-23deg);
 }

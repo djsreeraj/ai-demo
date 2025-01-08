@@ -2,16 +2,19 @@ import "./ChatBox.css";
 // import MessageCard from "./MessageCard";
 
 const ChatBox = () => {
-  const messages = [
+  const initialMsgs = [
     { id: 1, text: "Hi, May I help you?", sender: "left" },
     { id: 2, text: "What is the pricing?", sender: "right" },
     { id: 3, text: "Is there a free trial?", sender: "right" },
     { id: 4, text: "Is my data protected?", sender: "right" },
-    { id: 5, text: "Will this work for Teams", sender: "left" },
+  ];
+
+  const messages = [
+    { id: 1, text: "Will this work for Teams", sender: "user" },
     {
-      id: 6,
+      id: 2,
       text: "Yes, It's designed for Teams as well as individuals and integrates well with Slack.",
-      sender: "right",
+      sender: "system",
     },
   ];
 
@@ -19,9 +22,24 @@ const ChatBox = () => {
     <div className="chatbox">
       <div className="chat-container">
         <div className="chat-box">
-          {messages.map((message) => (
-            <div key={message.id} className={`chat-message ${message.sender}`}>
+          {initialMsgs.map((message) => (
+            <div
+              key={message.id}
+              className={`initial-message ${message.sender}`}
+            >
               <p>{message.text}</p>
+            </div>
+          ))}
+
+          {/* <div className="cm-system-container">
+            <div className="cs system">Your message content here</div>
+            <span className="system-polygon">...</span>
+          </div> */}
+
+          {messages.map((message) => (
+            <div className={`cm-${message.sender}-container`}>
+              <div className={`cs ${message.sender}`}>{message.text} </div>
+              <span className={`${message.sender}-polygon`}></span>
             </div>
           ))}
         </div>
