@@ -67,7 +67,9 @@
 
 .cm-system-container {
   position: relative;
-  max-width: 70%;
+  z-index: 10;
+
+  /* max-width: 70%; */
   padding: 2px; /* Border thickness */
   background: linear-gradient(90deg, #c0c0c0 30.5%, #adadad 67%);
   border-radius: 20px; /* Rounded border */
@@ -83,7 +85,6 @@
 .cm-user-container {
   position: relative;
   z-index: 10;
-  max-width: 70%;
   padding: 2px; /* Border thickness */
   background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);
   border-radius: 20px; /* Rounded border */
@@ -132,26 +133,50 @@
 }
 
 
-.user-polygon{
-  position: absolute;
-  width: 28.87px;
-  height: 27.41px;
-  left: 5.62px;
-  bottom: -8.15px;
-  z-index: 8;
-  background: linear-gradient(180deg, #1E58E5 0%, #05B9FB 100%);
-  border-radius: 4px;
-  transform: rotate(-33deg);
+.chat-parent{
+  position: relative;
+  max-width: 70%;
 }
+
+.user-polygon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -2.62px;
+  bottom: -3.15px;
+  z-index: 8;
+  border-left: 14.435px solid transparent; /* Half of the base width */
+  border-right: 14.435px solid transparent; /* Half of the base width */
+  border-bottom: 27.41px solid #1E58E5; /* Triangle height and color */
+  background: none; /* Remove background for the border triangle */
+  transform: rotate(-28deg);
+}
+
 
 .system-polygon{
   position: absolute;
+  width: 0;
+  height: 0;
+  height: 27.41px;
+  right: 15.62px;
+  bottom: -26.15px;
+  z-index: 8;
+  border-left: 14.435px solid transparent; /* Half of the base width */
+  border-right: 14.435px solid transparent; /* Half of the base width */
+  border-bottom: 27.41px solid #adadad; /* Triangle height and color */
+  background: none; /* Remove background for the border triangle */
+  transform: rotate(-93deg);
+}
+
+/* .system-polygon{
+  position: absolute;
   width: 28.87px;
   height: 27.41px;
-  right: -10.62px;
+  right: -5.62px;
   bottom: -8.15px;
   z-index: 8;
   background: linear-gradient(60deg, #c0c0c0 30.5%, #adadad 67%);
   border-radius: 4px;
   transform: rotate(-23deg);
-}
+  
+} */

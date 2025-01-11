@@ -1,4 +1,5 @@
 import "./ChatBox.css";
+import MessageBox from "./MessageBox";
 // import MessageCard from "./MessageCard";
 
 const ChatBox = () => {
@@ -37,17 +38,17 @@ const ChatBox = () => {
           </div> */}
 
           {messages.map((message) => (
-            <div className={`cm-${message.sender}-container`}>
-              <div className={`cs ${message.sender}`}>{message.text} </div>
+            <div className="chat-parent">
+              <div className={`cm-${message.sender}-container`}>
+                <div className={`cs ${message.sender}`}>{message.text} </div>
+              </div>
               <span className={`${message.sender}-polygon`}></span>
             </div>
           ))}
         </div>
-        <div className="input-box">
-          {/* <input type="text" placeholder="Enter Your message..." /> */}
-          <textarea placeholder="Enter Your message..." />
-          <button>Send</button>
-        </div>
+
+        <MessageBox />
+    
       </div>
 
       {/* <MessageCard message="Hello, how can I help you?" />
