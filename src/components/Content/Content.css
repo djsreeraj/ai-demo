@@ -18,3 +18,8 @@
 .iframe{
     border-radius: 10px;
 }
+.contentMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

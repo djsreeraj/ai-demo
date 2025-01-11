@@ -1,0 +1,31 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
+
+.danger{
+    background-color: rgba(239, 100, 83, 1);
+    color: #fff;
+}
+
+.success{
+    background-color: #4a8f63;
+    color: #fff;
+
+}
+
+.secondary{
+    background-color: #e1e1e1;
+}
