@@ -1,25 +1,58 @@
-.content{
-    display: flex;
-    background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-    height: 600px;
-    /* margin: 1px 20px; */
-    box-sizing: border-box;
-}
-
-.videoBlock{
-    width: 60%;
-    background-color: rgb(238, 238, 238);
-    border-radius: 10px;
-}
-
-.iframe{
-    border-radius: 10px;
-}
 .contentMain{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    width: 100%;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.column {
+    box-sizing: border-box;
+  }
+
+  .video{
+    min-height: 600px;
+    padding: 15px;
+    background: rgba(218, 220, 220, 1);
+    /* background-color: rgb(238, 238, 238);  */
+    border-radius: 10px;
+  }
+
+.videoBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 59%; /* 60% width */
+    border-radius: 10px;
+}
+
+.chatBox{
+    flex: 0 0 40%; /* 60% width */
+    /* background-color: rgb(238, 238, 238); */
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .videoBlock,
+    .chatBox {
+      flex: 0 0 100%; /* Full width for both columns */
+    }
+  }
+
+
+
+.iframe{
+    border-radius: 10px;
 }

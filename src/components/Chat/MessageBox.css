@@ -13,7 +13,7 @@
   /* Message Box Container */
   .message-box {
     position: relative;
-    width: 400px;
+    width: 100%;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;

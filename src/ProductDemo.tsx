@@ -4,7 +4,7 @@ import TitleSection from "./components/TitleSection/Title";
 
 const ProductDemo = () => {
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <Header />
       <TitleSection />
       <Content />

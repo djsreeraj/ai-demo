@@ -38,7 +38,7 @@ const ChatBox = () => {
           </div> */}
 
           {messages.map((message) => (
-            <div className="chat-parent">
+            <div className={`chat-parent ${message.sender}`}>
               <div className={`cm-${message.sender}-container`}>
                 <div className={`cs ${message.sender}`}>{message.text} </div>
               </div>
@@ -48,7 +48,6 @@ const ChatBox = () => {
         </div>
 
         <MessageBox />
-    
       </div>
 
       {/* <MessageCard message="Hello, how can I help you?" />
