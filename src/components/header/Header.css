@@ -21,8 +21,8 @@
 
 .user:hover {
   /* background-color: #f0f0f0; */
-  /* color: rgba(11, 157, 245, 1); */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Example shadow */
+  color: rgba(11, 157, 245, 1);
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Example shadow */
 }
 
 .avatar {

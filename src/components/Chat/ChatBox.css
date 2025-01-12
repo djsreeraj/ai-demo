@@ -93,8 +93,6 @@
   padding: 3px; /* Border thickness */
   margin-right: -18px;
   margin-bottom: -9px;
-
-  /* background: linear-gradient(90deg, #c0c0c0 30.5%, #adadad 67%); */
   background: linear-gradient(90deg, #0B9DF5 30.5%, rgba(29, 93, 230, 1)  67%);
   border-radius: 20px; /* Rounded border */
 }
@@ -121,11 +119,6 @@
   padding: 10px; /* Content padding */
   border-radius: 18px; /* Inner border radius should be smaller */
 }
-
-/* .chat-message.bot {
-  align-self: flex-end;
-  border: 1px solid linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%); 
-} */
 
 .input-box {
   display: flex;
