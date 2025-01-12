@@ -11,12 +11,30 @@ const ChatBox = () => {
   ];
 
   const messages = [
-    { id: 1, text: "Will this work for Teams", sender: "user" },
+    { id: 1, text: "Will this work for Teams?", sender: "user" },
     {
       id: 2,
-      text: "Yes, It's designed for Teams as well as individuals and integrates well with Slack.",
-      sender: "system",
+      text: "Yes, it's designed for Teams as well as individuals and integrates well with Slack.",
+      sender: "bot",
     },
+    // { id: 3, text: "Does it support notifications?", sender: "user" },
+    // {
+    //   id: 4,
+    //   text: "Absolutely! You can set up custom notifications for your workflows.",
+    //   sender: "bot",
+    // },
+    // { id: 5, text: "Can I use it on mobile?", sender: "user" },
+    // {
+    //   id: 6,
+    //   text: "Yes, there are mobile apps for iOS and Android to keep you connected.",
+    //   sender: "bot",
+    // },
+    // { id: 7, text: "Is there a free trial available?", sender: "user" },
+    // {
+    //   id: 8,
+    //   text: "Yes, we offer a 14-day free trial with full access to all features.",
+    //   sender: "bot",
+    // },
   ];
 
   return (
@@ -32,10 +50,7 @@ const ChatBox = () => {
             </div>
           ))}
 
-          {/* <div className="cm-system-container">
-            <div className="cs system">Your message content here</div>
-            <span className="system-polygon">...</span>
-          </div> */}
+          {/* <p style={{ paddingTop: "2px", margin: 0 }}></p> */}
 
           {messages.map((message) => (
             <div className={`chat-parent ${message.sender}`}>

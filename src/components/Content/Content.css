@@ -30,6 +30,12 @@
     border-radius: 10px;
   }
 
+  .vid{
+    background: rgb(242, 242, 242);
+    padding: 15px;
+    border: 0;
+  }
+
 .videoBlock{
     display: flex;
     flex-direction: column;

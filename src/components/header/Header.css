@@ -14,6 +14,15 @@
   justify-content: flex-start;
   align-items: center;
   flex-grow: 0; /* Ensure it does not take excessive space */
+  cursor: pointer;
+  padding: 10px 20px 10px 10px;
+  border-radius: 20%;
+}
+
+.user:hover {
+  /* background-color: #f0f0f0; */
+  /* color: rgba(11, 157, 245, 1); */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Example shadow */
 }
 
 .avatar {

@@ -20,7 +20,7 @@ const Header = () => {
             alt="user"
           />
         </a>
-        <p> Contact Sales </p>
+        <p style={{ marginTop: "10px" }}> Contact Sales </p>
       </div>
     </div>
   );

@@ -1,19 +1,20 @@
 .chatbox{
     height: 100%;
-    min-height: 500px;
+    min-height: 600px;
     min-width: 400px;
     background-color: rgb(218, 218, 218);
     display: flex;
     gap: 50px;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 0px 0px 10px 10px;
-    margin-left:-20px ;
-    padding: 15px 25px;
+    border-radius: 0px 10px 10px 10px;
+    margin-left:-15px ;
+    padding: 5px 5px 5px 5px;
+    border-left: 1px solid #e5e5e5;
 }
 
 .chat-container {
-  height: 570px;
+  height: 598px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,10 +23,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
   border-radius: 8px;
   background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
-  padding: 15px 25px;
+  
 }
 
 .chat-box {
@@ -36,13 +36,14 @@
   gap: 12px;
   overflow-y: auto;
   max-height: 400px;
+  
 }
 
 .initial-message {
   max-width: 70%;
   padding: 1px 20px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -63,53 +64,65 @@
   display: flex;
 }
 
+.chat-parent.bot {
+  align-self: flex-start;
+}
+
+.chat-parent.user {
+  align-self: flex-end;
+}
+
 
 .chat-message {
   display: flex;
   padding: 1px 20px;
   border-radius: 20px;
-  font-size: 14px;
   line-height: 1.4;
 }
 
 .cs {
   padding: 1px 20px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.4;
-}
-
-.cm-system-container {
-  position: relative;
-  z-index: 10;
-  padding: 2px; /* Border thickness */
-  background: linear-gradient(90deg, #c0c0c0 30.5%, #adadad 67%);
-  border-radius: 20px; /* Rounded border */
-}
-
-.cs.system {
-  align-self: flex-start;
-  background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
-  padding: 10px; /* Content padding */
-  border-radius: 18px; /* Inner border radius should be smaller */
 }
 
 .cm-user-container {
   position: relative;
   z-index: 10;
-  padding: 2px; /* Border thickness */
-  background: linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%);
+  padding: 3px; /* Border thickness */
+  margin-right: -18px;
+  margin-bottom: -9px;
+
+  /* background: linear-gradient(90deg, #c0c0c0 30.5%, #adadad 67%); */
+  background: linear-gradient(90deg, #0B9DF5 30.5%, rgba(29, 93, 230, 1)  67%);
   border-radius: 20px; /* Rounded border */
 }
 
 .cs.user {
+  align-self: flex-start;
+  background: linear-gradient(90deg, rgba(29, 93, 230, 1) 30.5%, #0B9DF5 67%);
+  background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
+  padding: 10px; /* Content padding */
+  border-radius: 18px; /* Inner border radius should be smaller */
+}
+
+.cm-bot-container {
+  position: relative;
+  z-index: 10;
+  padding: 3px; /* Border thickness */
+  background: linear-gradient(90deg, #adadad   30.5%, #c0c0c0 67%);
+  border-radius: 20px; /* Rounded border */
+}
+
+.cs.bot {
   align-self: flex-end;
   background: linear-gradient(88.22deg, #DADCDC 29.14%, #DADDE1 84.93%);
   padding: 10px; /* Content padding */
   border-radius: 18px; /* Inner border radius should be smaller */
 }
 
-/* .chat-message.user {
+/* .chat-message.bot {
   align-self: flex-end;
   border: 1px solid linear-gradient(90deg, #2830DC 30.5%, #0B9DF5 67%); 
 } */
@@ -145,7 +158,7 @@
 }
 
 
-.user-polygon {
+.bot-polygon {
   position: absolute;
   width: 0;
   height: 0;
@@ -154,13 +167,13 @@
   z-index: 8;
   border-left: 14.435px solid transparent; /* Half of the base width */
   border-right: 14.435px solid transparent; /* Half of the base width */
-  border-bottom: 27.41px solid #1E58E5; /* Triangle height and color */
+  border-bottom: 27.41px solid #adadad; /* Triangle height and color */
   background: none; /* Remove background for the border triangle */
   transform: rotate(-28deg);
 }
 
 
-.system-polygon{
+.user-polygon{
   position: absolute;
   width: 0;
   height: 0;
@@ -170,12 +183,12 @@
   z-index: 8;
   border-left: 14.435px solid transparent; /* Half of the base width */
   border-right: 14.435px solid transparent; /* Half of the base width */
-  border-bottom: 27.41px solid #adadad; /* Triangle height and color */
+  border-bottom: 27.41px solid rgba(29, 93, 230, 1); /* Triangle height and color */
   background: none; /* Remove background for the border triangle */
   transform: rotate(-93deg);
 }
 
-/* .system-polygon{
+/* .user-polygon{
   position: absolute;
   width: 28.87px;
   height: 27.41px;

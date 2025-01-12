@@ -1,4 +1,4 @@
-import './NavBar.css';
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
         <li className="navbar-item">Products</li>
         <li className="navbar-item">Support</li>
         <li className="navbar-item">Consulting</li>
-        <li className="navbar-item">Quick Demo</li>
+        <li className="navbar-item active">Quick Demo</li>
       </ul>
     </nav>
   );
