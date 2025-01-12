@@ -1,13 +1,13 @@
 import {
   MicOff24Filled,
   Video24Filled,
-  Mic24Filled,
+  // Mic24Filled,
   CommentNote24Filled,
   TabletSpeaker24Filled,
   Navigation24Filled,
-  Pause24Filled,
+  // Pause24Filled,
   Subtitles24Regular,
-  Subtitles24Filled,
+  // Subtitles24Filled,
   Pause24Regular,
 } from "@fluentui/react-icons";
 import Button from "../UI/Button";
